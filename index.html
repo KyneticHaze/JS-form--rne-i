@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <title>Form Bölüm Sonu</title>
+  </head>
+  <body>
+
+    <div id="alert"></div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <form id="userForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Kullanıcı Adı</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="form-control"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="score" class="form-label">Not Bilgisi</label>
+              <input
+                type="number"
+                name="score"
+                id="score"
+                class="form-control"
+              /><!--inputun name'i kesin olmalı!-->
+            </div>
+            <div class="buttons">
+                <button type="reset" class="btn btn-danger">Sıfırla</button>
+                <button type="submit" class="btn btn-success">Gönder</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-6 offset-sm-3 mt-4">
+            <ul class="list-group" id="userList">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  A list item
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
